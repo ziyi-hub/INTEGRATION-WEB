@@ -1,22 +1,241 @@
-@media screen and (max-width: 400px) {
-  body {
-    display: grid;
-    grid-template-rows: repeat(11, minmax(0, 10%));
-    grid-template-columns: repeat(1, minmax(0, 400px));
+@media screen and (min-width: 1200px) {
+  h2, h3, section > .grid_item:nth-child(1) {
+    color: darkorange;
   }
 
-  #header {
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
-    padding: 2px;
+  #header-notes {
+    color: grey;
   }
 
   #header-logo {
-    display: inline-block;
+    display: flex;
+    width: 100%;
   }
 
-  #block {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  .grid_container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 16.6666666667rem));
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 33.3333333333rem));
+  }
+
+  #header {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     padding: 2px;
+  }
+
+  section, .grid_item {
+    margin: 1%;
+  }
+
+  .large {
+    display: grid;
+    grid-template-rows: repeat(4, minmax(0, 25rem));
+  }
+
+  .small {
+    display: grid;
+    grid-template-rows: repeat(10, minmax(0, 10rem));
+  }
+
+  .figcaption-large {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    padding: 10px;
+  }
+  .figcaption-small {
+    grid-row-start: 2;
+    grid-row-end: 11;
+    padding: 10px;
+  }
+
+  section > .grid_item:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(2) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(3) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(4) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(5) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(6) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(7) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(8) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(9) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(10) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  section > .grid_item:nth-child(11) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 0.4em rgba(0, 0, 0, 0.3);
+  }
+
+  #amp-img {
+    background-image: url(../projet-img/img-site/activate-google-amp.png);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #drive-img {
+    background-image: url(../projet-img/img-site/be-delivery-driver.jpg);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #reactjs {
+    background-image: url(../projet-img/img-site/reactjs-passdata.jpg);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #wordpress {
+    background-image: url(../projet-img/img-site/wordpress-jekyll.png);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #angularJS {
+    background-image: url(../projet-img/img-site/live_update.jpg);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #cordova {
+    background-image: url(../projet-img/img-site/Cordova_Alaska_aerial_view.jpg);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #development {
+    background-image: url(../projet-img/img-site/stuttgart-1598427_1920.jpg);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #ionic {
+    background-image: url(../projet-img/img-site/build-publish-ionic-app.png);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #js {
+    background-image: url(../projet-img/img-site/drake-no-js-drake-yes-ts.png);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #splash {
+    background-image: url(../projet-img/img-site/splash.jpg);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
 
