@@ -11,6 +11,7 @@ $max-width-xs:400px !default
 @mixin block()
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3)
   padding: 2px
+  width: 100%
 
 @mixin header()
   box-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0.1em 0 .4em rgba(0, 0, 0, 0.3)
@@ -18,6 +19,14 @@ $max-width-xs:400px !default
 
 @mixin header-logo()
   display: inline-block
+
+@mixin grid-column($start, $end)
+  grid-column-start: $start
+  grid-column-end: $end
+
+@mixin grid-row($start, $end)
+  grid-row-start: $start
+  grid-row-end: $end
 
 
 

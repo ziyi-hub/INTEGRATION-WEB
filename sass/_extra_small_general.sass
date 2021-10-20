@@ -1,8 +1,8 @@
 @import "extra_small"
 
 @media screen and (max-width: 400px)
-  body
-    @include grid-template(11, 1)
+  section
+    @include grid-template(11, 2)
 
   #header
     @include header
@@ -12,3 +12,19 @@
 
   #block
     @include block
+
+  #navigation
+    @include grid-column(1, 3)
+    @include grid-row(1, 2)
+
+  #amp
+    @include grid-column(1, 3)
+    @include grid-row(2, 3)
+
+  #drive
+    @include grid-column(1, 3)
+    @include grid-row(3, 4)
+
+
+  footer
+    @include grid-row(10, 11)
