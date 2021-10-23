@@ -1,25 +1,93 @@
-@import "constructeur"
+@import "constructor"
 
-@media screen and (min-width: 800px)
+@media screen and (min-width: 930px)
+  body
+    font-family: Arial
+
   h2, h3, section > .grid_item:nth-child(1)
     @include color(darkorange)
 
-  #header-notes
-    @include color(grey)
+  h3
+    font-size: 20px
+    margin-top: -20px
 
-  #header-logo
-    display: flex
-    width: 100%
+    #header
+      @include header
+      padding-right: 10px
+      font-size: 90%
+
+    #header-notes
+      @include color(grey)
+      font-weight: lighter
+      font-size: 110%
+      padding-bottom: 20px
+
+    #header-logo
+      display: flex
+      width: 100%
+
+    #header-title
+      padding-bottom: 15px
+      margin-left: 15px
+      margin-top: -10px
+      text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5)
+
+    .navigation
+      @include color(darkorange)
+      padding-top: 10px
+      padding-bottom: 10px
+      font-size: 90%
+
+    nav ul li
+      padding: 5px 5px 5px 5px
+      list-style-type: none
+      margin-left: -20px
+
+    #nav-h1
+      font-weight: bolder
+      font-family: "Britannic Bold"
+
+    #ul-authors
+      list-style-type: none
+
+    #ul-authors li
+      margin-left: -35px
+
+    #ul-categories
+      list-style-type: none
+
+    #ul-categories li
+      margin-left: -35px
+
+    .author
+      text-decoration: underline
+      margin: -8px 0 -12px -5px
+      @include color(black)
+
+    .date
+      font-style: italic
+      margin-left: -4px
+      @include color(black)
+
+    .content
+      text-align: justify
+      @include color(black)
+
+    #icons
+      display: flex
+      justify-content: flex-end
+      padding-bottom: 10px
+      margin-top: -60px
+
+    i
+      padding: 5px 5px 5px 5px
 
   .grid_container
     @include grid-template-columns(5)
     @include grid-template-rows(4)
 
-  #header
-    @include header
-
   section, .grid_item
-    margin: 1%
+    margin: 3% 2% 3% 1%
 
   .large
     @include grid-template-rows(4)
@@ -56,14 +124,14 @@
 
   section > .grid_item:nth-child(4)
     @include grid-row(2, 3)
-    @include grid-column(1, 3)
+    @include grid-column(3, 4)
     @include grid_item
     padding: unset
 
 
   section > .grid_item:nth-child(5)
     @include grid-row(2, 3)
-    @include grid-column(3, 4)
+    @include grid-column(1, 3)
     @include grid_item
     padding: unset
 
@@ -112,48 +180,72 @@
 
   #amp-img
     background-image: url(../projet-img/img-site/activate-google-amp.png)
-    @include img
+    @include img(100%, 100px)
 
 
   #drive-img
     background-image: url(../projet-img/img-site/be-delivery-driver.jpg)
-    @include img
+    @include img(100%, 100px)
 
 
   #reactjs
     background-image: url(../projet-img/img-site/reactjs-passdata.jpg)
-    @include img
+    @include img(100%, 100px)
 
 
   #wordpress
     background-image: url(../projet-img/img-site/wordpress-jekyll.png)
-    @include img
+    @include img(100%, 100px)
 
 
   #angularJS
     background-image: url(../projet-img/img-site/live_update.jpg)
-    @include img
+    @include img(100%, 100px)
 
 
   #cordova
     background-image: url(../projet-img/img-site/Cordova_Alaska_aerial_view.jpg)
-    @include img
+    @include img(100%, 100px)
 
 
   #development
     background-image: url(../projet-img/img-site/stuttgart-1598427_1920.jpg)
-    @include img
+    @include img(100%, 100px)
 
 
   #ionic
     background-image: url(../projet-img/img-site/build-publish-ionic-app.png)
-    @include img
+    @include img(100%, 100px)
 
 
   #js
     background-image: url(../projet-img/img-site/drake-no-js-drake-yes-ts.png)
-    @include img
+    @include img(100%, 100px)
 
   #splash
     background-image: url(../projet-img/img-site/splash.jpg)
-    @include img
+    @include img(100%, 100px)
+
+
+  .font-reduce
+    font-size: 90%
+    margin-top: 20px
+
+    footer
+      display: flex
+      justify-content: flex-end
+      margin-right: 80px
+
+    button
+      border: 1px solid black
+      padding: 8px 30px 8px 30px
+      border-radius: 30px
+      background-color: white
+
+    #fleche
+      margin-left: -9px
+
+    .line
+      border: 2px solid black
+      width: 30px
+      background-color: black
