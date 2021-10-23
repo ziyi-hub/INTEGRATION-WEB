@@ -6,16 +6,26 @@
     <title>Title</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="sass/style_final.css">
-</head>
 <body>
 <div id="header">
-    <div id="header-logo">
-        <img src="projet-img/img-site/logo.svg" alt="logo" width="50px" height="50px">
-        <div class="header-title">
-            <h1>web dev notes</h1>
+        <div id="header-logo">
+            <img src="projet-img/img-site/logo.svg" alt="logo" width="50px" height="50px">
+            <div id="header-title">
+                <h1>web dev notes</h1>
+            </div>
         </div>
+
+    <div id="icons">
+        <i class="fa fa-bitbucket" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-envelope-square" aria-hidden="true"></i>
     </div>
+
     <h4 id="header-notes">
         Web developeer. Backend + Frontend. Learning about designing user interfaces,
         improvement of user experiences and its.
@@ -23,36 +33,48 @@
 </div>
 
 <section class="grid_container">
-    <div class="grid_item">
-        <h1>Navigation</h1>
+    <div class="navigation">
+        <h1 id="nav-h1">Navigation</h1>
         <nav>
             <ul>
-                <li>Blog</li>
-                <li>Categories</li>
-                <ul>
+                <li>
+                    <i class="fa fa-rss" aria-hidden="true"></i>
+                    Blog
+                </li>
+                <li>
+                    <i class="fa fa-archive" aria-hidden="true"></i>
+                    Categories
+                </li>
+                <ul id="ul-categories">
                     <li>Guest post</li>
                     <li>Web development</li>
                     <li>App development</li>
                     <li>Blogging</li>
                     <li>Design ressources</li>
                 </ul>
-                <li>Authors</li>
-                <ul>
+                <li><i class="fa fa-user-circle-o" aria-hidden="true"></i>Authors</li>
+                <ul id="ul-authors">
                     <li>Lissa Doniro</li>
                     <li>Michael Kordvani</li>
                     <li>jmtalarn</li>
                 </ul>
-                <li>Search</li>
-                <li>About</li>
+                <li>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    Search
+                </li>
+                <li><i class="fa fa-question-circle-o" aria-hidden="true"></i>About</li>
             </ul>
         </nav>
     </div>
+
     <div class="grid_item large">
         <div id="amp-img"></div>
-        <div class="figcaption-large">
+        <div class="figcaption-large font-reduce">
             <h3>How to activate Goggle's AMP and what they are</h3>
-            <p>author</p>
-            <p>Invalid Date</p>
+            <p class="line"></p>
+            <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Lissa Doniro</p>
+            <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                Invalid Date</p>
             <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Maxime aspernatur odit, nam nulla quam assumenda voluptates
                     sunt neque tempore excepturi ut nihil rem expedita accusantium
@@ -63,10 +85,12 @@
 
     <div class="grid_item large">
         <div id="drive-img"></div>
-        <div class="figcaption-large">
+        <div class="figcaption-large font-reduce">
             <h3>Tought Time Finding A Job? Consider Being A Delivery Drive</h3>
-            <p>author</p>
-            <p>Invalid Date</p>
+            <p class="line"></p>
+            <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Michael Kordvani</p>
+            <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                Invalid Date</p>
             <p class="content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maxime aspernatur odit, nam nulla quam assumenda voluptates
@@ -78,10 +102,12 @@
 
     <div class="grid_item small">
         <div id="js"></div>
-            <div class="figcaption-small">
+            <div class="figcaption-small font-reduce">
                 <h3>3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h3>
-                <p>author</p>
-                <p>date</p>
+                <p class="line"></p>
+                <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Michael Kordvani</p>
+                <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    date</p>
                 <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Maxime aspernatur odit, nam nulla quam assumenda voluptates
                     sunt neque tempore excepturi ut nihil rem expedita accusantium
@@ -92,10 +118,12 @@
 
     <div class="grid_item large">
         <div id="reactjs"></div>
-        <div class="figcaption-large">
+        <div class="figcaption-large font-reduce">
             <h3>React quick overview and nested components</h3>
-            <p>author</p>
-            <p>Invalid Date</p>
+            <p class="line"></p>
+            <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>jmtalarn</p>
+            <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                Invalid Date</p>
             <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maxime aspernatur odit, nam nulla quam assumenda voluptates
                 sunt neque tempore excepturi ut nihil rem expedita accusantium
@@ -106,10 +134,12 @@
 
     <div class="grid_item small">
         <div id="ionic"></div>
-        <div class="figcaption-small">
+        <div class="figcaption-small font-reduce">
                 <h3>Build and publish a Ionic App</h3>
-                <p>author</p>
-                <p>date</p>
+                <p class="line"></p>
+                <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>jmtalarn</p>
+                <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    date</p>
                 <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Maxime aspernatur odit, nam nulla quam assumenda voluptates
                     sunt neque tempore excepturi ut nihil rem expedita accusantium
@@ -120,10 +150,12 @@
 
     <div class="grid_item small">
         <div id="splash"></div>
-        <div class="figcaption-small">
+        <div class="figcaption-small font-reduce">
             <h3>Build and publish a Ionic App - Generate icon and splash images</h3>
-            <p>author</p>
-            <p>date</p>
+            <p class="line"></p>
+            <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>jmtalarn</p>
+            <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                date</p>
             <p class="content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maxime aspernatur odit, nam nulla quam assumenda voluptates
@@ -135,10 +167,12 @@
 
     <div class="grid_item large">
         <div id="wordpress"></div>
-        <div class="figcaption-large">
+        <div class="figcaption-large font-reduce">
             <h3>Migrate a blog from Wordpress to Jekyll</h3>
-            <p>author</p>
-            <p>date</p>
+            <p class="line"></p>
+            <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>jmtalarnr</p>
+            <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                date</p>
             <p class="content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maxime aspernatur odit, nam nulla quam assumenda voluptates
@@ -150,10 +184,12 @@
 
     <div class="grid_item large">
         <div id="angularJS"></div>
-        <div class="figcaption-large">
+        <div class="figcaption-large font-reduce">
             <h3>Firebase backend with AngularJS</h3>
-            <p>author</p>
-            <p>date</p>
+            <p class="line"></p>
+            <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>jmtalarn</p>
+            <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                date</p>
             <p class="content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maxime aspernatur odit, nam nulla quam assumenda voluptates
@@ -165,10 +201,12 @@
 
     <div class="grid_item large">
         <div id="cordova"></div>
-        <div class="figcaption-large">
+        <div class="figcaption-large font-reduce">
             <h3>Build and publish a Ionic App - Cordova plugins</h3>
-            <p>author</p>
-            <p>date</p>
+            <p class="line"></p>
+            <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>jmtalarn</p>
+            <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                date</p>
             <p class="content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maxime aspernatur odit, nam nulla quam assumenda voluptates
@@ -180,10 +218,12 @@
 
     <div class="grid_item large">
         <div id="development"></div>
-        <div class="figcaption-large">
+        <div class="figcaption-large font-reduce">
             <h3>Free practical courses to learn about modern web</h3>
-            <p>author</p>
-            <p>date</p>
+            <p class="line"></p>
+            <p class="author"><i class="fa fa-user-circle-o" aria-hidden="true"></i>jmtalarn</p>
+            <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                date</p>
             <p class="content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maxime aspernatur odit, nam nulla quam assumenda voluptates
@@ -196,7 +236,8 @@
 <footer>
     <button type="submit" id="btn-next">
         Go to Next Page
-        <img src="projet-img/img-site/flesh.svg" alt="logo" width="10px" height="10px">
+        <img src="projet-img/img-site/fleche.svg" alt="logo" width="10px" height="10px">
+        <img src="projet-img/img-site/fleche.svg" alt="logo" width="10px" height="10px" id="fleche">
     </button>
 </footer>
 </body>
